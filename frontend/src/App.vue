@@ -13,11 +13,7 @@ function send() {
   formData.append("description", description.value)
   formData.append("file", file.value.files[0])
 
-  // var headers = new Headers();
-  // headers.append('Content-Type', 'multipart/form-data')
-
   var requestOptions = {
-    // headers: headers,
     method: 'POST',
     body: formData
   };
